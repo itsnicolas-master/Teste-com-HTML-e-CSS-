@@ -1,0 +1,119 @@
+<!-- Quando eu estiver craque no desenvolvimento quero refazer toda esse "site" -->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head> 
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css.css"> 
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title> HTML + CSS </title>
+</head> 
+<body>
+    <h1>Aprendendo as estruturas, letras e códigos</h1>
+    <p><b>Para que servem os códigos e cada uma de suas funções</b></p>
+    <p>O p serve como "paragraph". O br serve para quebras de linha.</p>
+    <p>O &lt;hr&gt; serve para adicionarmos uma linha horizontal.</p>
+    <p>Já o &lt;br&gt; serve para quebrar a linha.</p>
+    <p>A letra &lt;b&gt; serve para deixar o texto em negrito <b>como neste exemplo</b></p>
+    <p>Temos a sigla <b>&lt;s&gt;</b> <s>que risca o texto</s></p>
+    <p>A tag I <i>deixa o texto em itálico</i></p>
+    <p>Para adicionarmos um link de algum site externo, é necessário escrever <a href="https://emojipedia.org/" target="_blank">. O target="_blank" serve para abrir o link em uma nova aba</a></p>
+    <hr>
+
+    <h1>Códigos usados no CSS</h1>
+    <p>Para "ativarmos" o CSS no nosso HTML, é necessário digitar: link rel="stylesheet" href="nome do arquivo CSS"</p>
+    <p>Nesse caso, ele abre uma guia para o CSS em nosso HTML.</p>
+    <p>A sigla &lt;div class&gt; serve para nomear um código específico, no caso nomear um parágrafo para ser modificado no CSS, como se fosse um caminho alternativo.</p>
+    <p>Já no CSS, precisamos colocar um ponto (.) e digitar tudo junto para termos acesso ao código específico.</p>
+
+    <ul type="square">
+        <h3>Agora vamos ver sobre como adicionar cores e imagens</h3>
+        <li>Para adicionar cores em todo o site em HTML, é dessa maneira:</li>
+        <li>Primeiro adicionamos dentro do body a sigla bgcolor > ele muda a cor do site como um todo</li>
+        <li>Para adicionarmos cores em letras específicas, funciona dessa maneira:</li>
+        <li style="color:#AABBCC; font-size: 14pt;">Esse é um exemplo</li>
+    </ul>
+
+    <p>Para fazer isso, só precisamos digitar dessa maneira: "li style="color:#AABBCC; font-size: 12px;" ou podemos adicionar exclusivamente com o CSS.</p>
+    <p>O li style define qual vai ser a cor da fonte, e o font-size define o tamanho dela.</p>
+    <p>Para conseguir acionar a função do código, é preciso adicionar ol type="exemplo".</p>
+    <p>Para podermos adicionar as imagens, primeiro precisamos baixá-las no nosso computador.</p>
+
+    <h1>Agora a diferença entre <b>LI e OL</b></h1>
+    <p>O <b>LI</b> deixa símbolos ao lado das palavras: como quadrado, bolinha etc. Quem irá definir sou eu.</p>
+    <li>Esse é um exemplo utilizando o li</li>
+    <p>Os tipos de listas são: disc / circle / square; sendo na ordem círculo preenchido, círculo sem preenchimento, quadrado.</p>
+    <p>Já o <b>OL</b> define uma ordem numérica definida por mim, que pode ser em números romanos, decimais etc.</p>
+
+    <ol>Esses são alguns exemplos</ol>
+    <ol type="x" start="1"> 
+        <li>Cachorro</li>
+        <li>Gato</li>
+        <li>Golfinho</li> 
+    </ol>
+
+    <h1>Como adicionar imagens</h1>
+    <p>Para definir o tamanho da imagem usamos as siglas: <b>width</b> para a largura e a sigla <b>height</b> para a altura da imagem</p>
+    <p>Para adicionar imagens é necessário baixá-las no formato JPG.</p>
+    <p>Transferir o arquivo da imagem junto ao arquivo do programa "HTML", por exemplo.</p>
+    <p>Logo após, é necessário digitar o código <code>&lt;img src="EXEMPLO.JPG"/&gt;</code></p>
+
+    <a>Exemplo:</a>
+    <img src="exemplo.jpg"/>
+
+    <p>Vamos adicionar alguns símbolos especiais.</p>
+    <p>Para poder adicionar emojis, é necessário usar: &amp;, #, x, o nome do código e ;</p>
+    <p>Este é um exemplo: 👽, 🏎️, 🍭</p>
+    <p>Obs: Se for no VSCode, é preciso adicionar o código do emoji. Já no Notepad++ é necessário só copiar e colar o emoji!</p>
+    <p>Para achar os emojis, é só pesquisar no site <b>Emojipedia</b> <a href="https://emojipedia.org/" target="_blank">clique aqui</a></p>
+
+    <hr>
+    <p>Dica: Se selecionar a linha e apertar Shift + Alt + seta para baixo, ele copia a linha para baixo do código.</p>
+    <p>Agora vamos adicionar fotos sem precisar baixá-las no próprio computador.</p>
+    <p>Para fazer isso, é só digitar no VSCode "IMG search".</p>
+    <p>Exemplo de uma imagem sendo aplicada:</p>
+
+    <div class="container">
+        <!-- A tag div serve para nomear um código sem um nome próprio -->
+        <img src="https://f.i.uol.com.br/fotografia/2021/06/18/162402965960ccb9db1a65c_1624029659_3x2_lg.jpg" width="300" height="220" alt="Imagem de leão">
+    </div>
+
+    <p>Para criar sites, é necessário verificar se a imagem tem direitos autorais; existem sites específicos que fazem essa função.</p>
+
+    <hr>
+    <h6>Criando tabelas</h6>
+    <table border="1px" width="300px" cellspacing="0px" cellpadding="0px"> 
+        <tr>  
+            <th>Nome</th>
+            <th>Idade</th> 
+            <th>Hobbie</th> 
+        </tr> 
+        <tr align="center" valign="top"> 
+            <td>Nicolas</td>
+            <td>18 Anos</td> 
+            <td>Fórmula 1</td>
+        </tr>
+    </table>
+
+    <hr>
+    <p>Para iniciarmos a criação do código da nossa tabela, é necessário adicionar a tag &lt;TABLE&gt;, para dar ao código a abertura da tabela. Depois usamos a tag &lt;TH&gt;, que define o início dos tópicos da tabela, logo em seguida a tag &lt;TR&gt; para definir a linha da tabela e a tag &lt;TD&gt;, que define o que vai ser armazenado em cada coluna. Através disso, já temos a estrutura básica da tabela pré-pronta.</p>
+    <p>A tag <b>TABLE</b> é utilizada para dar o comando de início e fim de uma tabela.</p>
+    <p>A tag <b>TR</b> serve para iniciar o topo da tabela.</p>
+    <p>A tag <b>TH</b> serve para podermos adicionar as colunas.</p>    
+    <p>A tag <b>TD</b> serve para adicionar as linhas das colunas.</p>
+    <p>A tag <b>BORDER</b> é usada para poder dar o formato na "planilha".</p>
+    <p>A tag <b>CELLSPACING</b> serve para ajustar a "borda" da coluna.</p>     
+    <p>A tag <b>TBODY</b> é usada para agrupar as linhas de dados principais da tabela.</p>
+    <p>A tag <b>CELLPADDING</b> serve para regular o espaço de dentro.</p>     
+    <p>A tag <b>ALIGN</b> é usada para alinhar o texto, ex: centro, direita, esquerda etc.</p>    
+    <p>A tag <b>VALIGN</b> ou <b>VERTICAL-ALIGN</b> pode ser: top, middle, bottom; ela muda a ordem dos dados dentro da tabela.</p>
+    <p>O <b>ALIGN</b> ajusta a horizontal e o <b>VALIGN</b> ajusta a vertical.</p>
+
+    <hr>
+    <h1>Como adicionar FAVicons na nossa página HTML</h1>
+    <p><b>O Favicon</b> seria um "título" de favorito na página.</p>
+    <p>Para adicionarmos um ícone de favicon à nossa página, basta converter uma imagem PNG para o formato favicon. Para isso, é necessário ir ao site favicon.io.</p> 
+    <a href="https://favicon.io/">Visitar o site favicon.io</a>
+    <p>Para adicionarmos o ícone na nossa página, basta digitar <b>link: favicon</b> dentro do &lt;head&gt;, acima do title. O próprio HTML já preenche. Depois é só procurar pelo nome do arquivo!</p> 
+    <p>Observação: após instalar o favicon no site, vá até a pasta de download e clique em "extrair tudo", para que o favicon seja convertido dentro da pasta. Fim.</p>
+</body>
+</html>

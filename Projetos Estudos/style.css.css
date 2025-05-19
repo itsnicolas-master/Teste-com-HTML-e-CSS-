@@ -1,0 +1,56 @@
+body{
+    background: linear-gradient(270deg,  #ede6e6, #b0b2b5, #3116c9ad);
+    background-size: 600% 400%;
+    animation: gradiendBG 15s ease infinite; 
+    text-align: left;
+    font-size: 140%;
+}
+h1 { 
+    color: #e9f3e9;
+    text-align: center;
+}
+
+h2 {
+    color: #e9f3e9;
+    text-align: center;
+}
+
+h3 {
+    color: #e9f3e9;
+    text-align: center;
+}
+
+h4 {   
+    color: #e9f3e9;
+    text-align: center;
+}
+
+.center {
+    text-align: center;
+}
+
+.container  { 
+        display: flex;
+        justify-content: center;
+}
+
+hr { 
+    color: black;
+}
+
+
+@keyframes gradiendBG {
+    0%{ background-position: 0% 50%;}
+    50%{ background-position: 100% 50%;}
+    100%{ background-position: 0% 50% }
+}
+
+table {
+    background-color: #5480c7;
+
+}
+
+a {
+    background-color: black;
+
+}
